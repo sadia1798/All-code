@@ -1,16 +1,22 @@
 <?php
-function is_Power_of_two($n)
+$m = 90;
+
+if ($m>=60)
 {
-   if(($n & ($n - 1)) == 0)
-    {
-		return "$n is power of 2";
-    }
-   else
-    {
-		return "$n is not power of 2";
-    }
+	$g = "First Division";
 }
-print_r(is_Power_of_two(4)."\n");
-print_r(is_Power_of_two(36)."\n");
-print_r(is_Power_of_two(16)."\n");
+else if($m>=45)
+{
+	$g = "Second Division";
+}
+else if($m>=33)
+{
+	$g = "Third Division";
+}
+else
+{
+	$g = "fail";
+}
+
+printf("grade is  :   %s ", $g);
 ?>
