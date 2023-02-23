@@ -2,7 +2,8 @@
 
 class Fund
 {
-public $fund;
+//public $fund;
+private $fund;
 
 function __construct($initialFund=0)
 {
@@ -11,6 +12,7 @@ function __construct($initialFund=0)
 public function addfund($money)
 {
     $this->fund+=$money;
+    $this->deductFund(0);
 }
 
 public function deductFund($money)
@@ -25,11 +27,11 @@ public function getTotal()
 }
 
 $ourFund = new Fund(100);
-//$ourFund->fund=99;
+//$ourFund->fund=99;   can be accessed if piblic , private can not be accessed from outside like this
 $ourFund->getTotal();
 //echo $ourFund->fund;
 $ourFund->addfund(100);
 $ourFund->getTotal();
-$ourFund->deductFund(50);
+$ourFund->deductFund(5);
 $ourFund->getTotal();
 ?>
