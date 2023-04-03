@@ -3,7 +3,7 @@
 
 class RegisterUser {
     private $firstName;
-    private $lastName;
+    private $lastName;     
     private $emailAddress;
 
     function __construct() {

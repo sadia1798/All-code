@@ -75,7 +75,7 @@ echo "<h3> Hello $name1 </h3>";
    </head>
    <body>
    <form method='POST'>
-
+   <h2>TASK 3 OF superglobal in php</h2>
    <h2>Please input your name:</h2>
  <input type="text" name="name">
  <h2>Please input your email:</h2>
@@ -115,10 +115,13 @@ class Person {
   $b=new person();
   $b->set_name($_POST['name']);
   $b->set_email($_POST['email']);
+ 
   echo "Name: " . $b->get_name();
   echo "\n";
   echo "<br>";
   echo "Email: " . $b->get_email();
+
+
 
 
 ?>
